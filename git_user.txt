@@ -14,3 +14,12 @@ git push origin master
 
 
 git tag v1.0
+
+git tag v0.9 6224937
+
+git tag -d v0.1
+
+
+git push origin --tags
+
+git push origin v1.0
