@@ -1,4 +1,4 @@
-ok
+git cmd 
 
 git log --graph --pretty=oneline --abbrev-commit #display branch log in graph
 
@@ -25,3 +25,6 @@ git push origin --tags
 git push origin v1.0
 
 git push origin --delete <branchName>
+
+git push origin --delete tag <tagname>
+
