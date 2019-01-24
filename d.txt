@@ -5,3 +5,9 @@ git log --graph --pretty=oneline --abbrev-commit #display branch log in graph
 git branch -d dev  #delete branch 
 
 git merge b-branch  #merge b-branch to current branch
+
+git remote add origin git@github.com:michaelliao/learngit.git
+
+git push -u origin master
+
+git push origin master
