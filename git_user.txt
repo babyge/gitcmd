@@ -93,6 +93,12 @@ $ git branch testing
 
 git branch -d testing
 
+$ git push origin master:serverfix
+
+删除远程分支serverfix
+$ git push origin :serverfix
+删除本地分支c-branch
+$ git branch -d c-branch
 
 
 
