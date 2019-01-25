@@ -1,32 +1,38 @@
-git cmd 
-
+git init
 git log --graph --pretty=oneline --abbrev-commit #display branch log in graph
-
 git branch -d dev  #delete branch 
-
 git merge b-branch  #merge b-branch to current branch
-
 git remote add origin git@github.com:michaelliao/learngit.git
-
 git push -u origin master
-
 git push origin master
-
-
 git tag v1.0
-
 git tag v0.9 6224937
-
 git tag -d v0.1
-
-
 git push origin --tags
-
 git push origin v1.0
-
 git push origin --delete <branchName>
-
 git push origin --delete tag <tagname>
-
-
 https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF
+git clone git://github.com/schacon/grit.git mygrit
+$ git add *.c
+$ git add README
+$ git commit -m 'initial project version'
+$ git status
+
+看一个 .gitignore 文件的例子：
+# 此为注释 – 将被 Git 忽略
+# 忽略所有 .a 结尾的文件
+*.a
+# 但 lib.a 除外
+!lib.a
+# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+/TODO
+# 忽略 build/ 目录下的所有文件
+build/
+# 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+doc/*.txt
+# 忽略 doc/ 目录下所有扩展名为 txt 的文件
+doc/**/*.txt
+
+若要看已经暂存起来的文件和上次提交时的快照之间的差异，可以用 git diff --cached 命令
+此命令比较的是工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化内容。 git diff
