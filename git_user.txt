@@ -36,3 +36,18 @@ doc/**/*.txt
 
 若要看已经暂存起来的文件和上次提交时的快照之间的差异，可以用 git diff --cached 命令
 此命令比较的是工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化内容。 git diff
+
+跳过使用暂存区域:
+git commit -a -m 'added new benchmarks'
+
+$ git rm --cached readme.txt
+$ git rm grit.gemspec
+
+要在 Git 中对文件改名，可以这么做：
+$ git mv file_from file_to
+
+
+
+
+
+
