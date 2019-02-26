@@ -1,4 +1,4 @@
-git init
+﻿git init
 git log --graph --pretty=oneline --abbrev-commit #display branch log in graph
 git branch -d dev  #delete branch 
 git merge b-branch  #merge b-branch to current branch
@@ -99,6 +99,8 @@ $ git push origin master:serverfix
 $ git push origin :serverfix
 删除本地分支c-branch
 $ git branch -d c-branch
+
+$ git reset --hard HEAD^
 
 
 
